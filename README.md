@@ -1,6 +1,6 @@
 # Canteen billing
 
-![canteen](/frontend/public/images/furnio.jpg)
+![canteen](s1.png)
 
 
 ## tech stack
