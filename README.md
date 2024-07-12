@@ -1,6 +1,6 @@
 # Canteen billing
 
-![canteen](s1.png)
+![canteen](/s1.PNG)
 
 
 ## tech stack
