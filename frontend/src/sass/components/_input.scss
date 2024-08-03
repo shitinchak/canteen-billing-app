@@ -1,0 +1,72 @@
+.input {
+    // border: 1px solid rgba(0,0,0, .3);
+    border: none;
+    border-radius: 3px;
+    background-color: var(--grey-color-1);
+    flex: 1;
+    padding: 1rem 2rem;
+    box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.15);
+    scale: 0.9;
+    transition: all 0.2s;
+
+    @media (min-width: 600px){
+      scale: 1;
+    }
+
+    &::placeholder {
+      text-transform: capitalize;
+    }
+
+    &:focus {
+      outline: none;
+      box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
+      scale: 0.95;
+      translate: 0 0.5rem;
+
+      @media(min-height: 600px){
+        scale: 1.1;
+        margin-bottom: 1.5rem !important;
+      }
+
+      &::placeholder {
+        opacity: 0;
+        visibility: hidden;
+      }
+    }
+
+    &--error {
+      background-color: rgba(225, 27, 27,.2);
+      border: rgb(225, 27, 27);
+      border-radius: 3px;
+      flex: 1;
+      padding: 1rem 2rem;
+      box-shadow: 0 1rem 4rem rgba(201, 22, 22, 0.15);
+      scale: 0.9;
+      transition: all 0.2s;
+
+      @media(min-width: 600px){
+        scale: 1;
+      }
+
+      &::placeholder {
+        text-transform: capitalize;
+      }
+
+      &:focus {
+        outline: none;
+        box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
+        scale: 0.95;
+        translate: 0 0.5rem;
+
+        @media(min-width: 600px){
+          scale: 1.1;
+          margin-bottom: 1.5rem !important;
+        }
+
+        &::placeholder {
+          opacity: 0;
+          visibility: hidden;
+        }
+      }
+    }
+  }

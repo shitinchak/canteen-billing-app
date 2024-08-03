@@ -1,0 +1,92 @@
+.owner-dashboard {
+  &__title {
+    text-transform: capitalize;
+    margin-left: 2rem;
+    margin-top: 2rem;
+  }
+}
+
+.card-holder {
+  display: flex;
+  margin: 2rem 0rem 2rem 2rem;
+  overflow-x: scroll;
+  box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.dash-card {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  flex: 1 0 20rem;
+  margin-right: 1.5rem;
+  padding: 1rem;
+  border-radius: 3px;
+  box-shadow: 1rem 0 1rem rgba(0, 0, 0, 0.2);
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  text-transform: capitalize;
+
+  @media (min-width: 600px){
+    width: 100%;
+    border: 1px solid var(--black-color);
+  }
+
+  &__content {
+    font-size: 2rem;
+    font-weight: 300;
+    line-height: 2;
+  }
+
+  &__badge {
+    // align-self: flex-end;
+    position: absolute;
+    right: 16px;
+    bottom: 4px;
+  }
+}
+
+.order{
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+  padding: 1rem;
+  background-color: var(--primary-color);
+  border-radius: 3px;
+
+  @media (min-width: 600px){
+    width: 98%;
+    border: 1px solid var(--black-color);
+  }
+  
+  &:last-child{
+    margin-bottom: 5rem;
+  }
+
+  &__details{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+
+  &__logo{
+    background-color: var(--grey-color);
+    border-radius: 100px;
+    padding:  .7rem .6rem .5rem .6rem;
+  }
+
+  &__text{
+    font-size: 1.5rem;
+    color: var(--white-color);
+
+    &--title{
+      text-transform: capitalize;
+      font-size: 2rem;
+    }
+
+  }
+}

@@ -1,5 +1,4 @@
-import React from "react";
-import "../Student/Sidebar/Sidebar.css";
+import "../../components/Navigation/Sidebar.css";
 // import {MenuSquare, ShoppingCart, BookOpen, User2, Settings, LogOut} from "lucide-react"
 import { Link } from "react-router-dom";
 

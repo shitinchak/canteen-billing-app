@@ -1,0 +1,47 @@
+.login {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100vh;
+
+  &__title-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10.7rem 2.4rem 2.4rem 2.4rem;
+    width: 80%;
+
+    &--reg{
+      margin-top: 7.7rem;
+    }
+  }
+
+  &__title{
+    text-transform: capitalize;
+    text-align: center;
+  }
+
+  &__sub-title {
+    text-align: center;
+    font-size: 1.4rem;
+  }
+
+  &__form {
+    text-align: center;
+    width: 100%;
+
+    @media (min-width: 600px){
+      width: 45%;
+    }
+
+    &-group {
+        display: flex;
+        flex-direction: column;
+    }
+  }
+
+  &__button-group{
+    background-color: #fff;
+  }
+}

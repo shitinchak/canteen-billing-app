@@ -21,6 +21,15 @@ li {
   list-style-type: none;
 }
 
+.nb-link{
+  text-decoration: none;
+}
+
+.nb-link--active{
+  text-decoration: none;
+  border-bottom: 3px solid var(--primary-color);
+}
+
 .nb-lb {
   width: 70px;
   height: 30px;

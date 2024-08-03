@@ -1,0 +1,18 @@
+@mixin clearfix{
+    &::after{
+        content: "";
+        clear: both;
+        display: table;
+    }
+}
+
+@mixin center-horizontal-vertical{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+}
+
+@mixin box-shadow-1{
+    box-shadow: 0rem 1rem 4rem rgba(0, 0, 0, 0.15);
+}

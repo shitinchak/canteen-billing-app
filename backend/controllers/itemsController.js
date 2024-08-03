@@ -43,7 +43,7 @@ exports.getAllItems = catchAsyncErrors(async (req, res, next) => {
   const resultPerPage = 20;
   const itemsCount = await Item.countDocuments();
 
-  const apiFeatures = new ApiFeatures(Item.find({availability:true, collegeCanteen: req.param.collegeCanteen }), req.query).search().filter();
+  const apiFeatures = new ApiFeatures(Item.find({availability:true, collegeCanteen: req.params.collegeCanteen }), req.query).search().filter();
 
   let items = await apiFeatures.query;
 

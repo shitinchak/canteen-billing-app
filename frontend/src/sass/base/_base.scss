@@ -1,0 +1,40 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+:root{
+  //colors
+  --black-color-light: #374151;
+  --black-color: #000;
+  --white-color: #fff;
+
+  --grey-color: #eee;
+  --grey-color-1: #F9FAFB;
+  --grey-color-2: #F4F7FE;
+
+ --primary-color: #E74C3C;
+ --primary-color-2: #78291b;
+
+}
+
+html {
+  /* root font size 10px */
+  font-size: 62.5%; 
+  @media (min-width: 600px){
+    font-size: 100%;
+  }
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--grey-color);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+
+  min-height: 100vh;
+}

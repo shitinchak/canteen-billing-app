@@ -1,4 +1,3 @@
-import React from "react";
 import "./Sidebar.css";
 // import {MenuSquare, ShoppingCart, BookOpen, User2, Settings, LogOut} from "lucide-react"
 import { Link } from "react-router-dom";

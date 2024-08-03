@@ -1,0 +1,86 @@
+.items {
+  display: flex;
+  flex-direction: column;
+
+  &__functions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__search {
+    width: 95%;
+
+    @media (min-width: 600px){
+      display: none;
+    }
+  }
+
+  &__title {
+    text-transform: capitalize;
+    font-size: 2rem;
+    font-weight: 100;
+    color: var(--black-color-light);
+  }
+
+  &__display {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 3rem 6rem 3rem;
+  }
+
+  &__card {
+    display: flex;
+    padding: 1rem 2rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    width: 32rem;
+    border-radius: 3px;
+    @include box-shadow-1;
+    background-color: var(--white-color);
+
+    @media (min-width: 600px){
+      width: 100%;
+      border: 1px solid var(--black-color);
+    }
+  }
+
+  &__text {
+    font-size: 1.2rem;
+  }
+
+  &__details {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+
+    &--1 {
+      width: 22rem;
+      flex: 2 0;
+    }
+
+    &--2 {
+      width: 9rem;
+      flex: 1 0;
+      align-items: center;
+      position: relative;
+    }
+  }
+
+  &__image {
+    width: 60%;
+    height: 80%;
+    border-radius: 3px;
+  }
+
+  &__button{
+    position: absolute;
+    bottom: 2px;
+    width: 50%;
+
+    &-text{
+        font-size: 1rem;
+        @include center-horizontal-vertical;
+    }
+  }
+}
